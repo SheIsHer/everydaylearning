@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        min-width: 550px;
+    }
+    #container{
+        margin-left: 200px;
+        margin-right: 150px;
+    }
+    #container .column{
+        position: relative;
+        float: left;
+    }
+    #center{
+        width: 100%;
+    }
+    #left{
+        margin-left: -100%;
+        left: -200px;
+    }
+    #right{
+        margin-right: -150px;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="center" class="column">1111</div>
+        <div id="left" class="column">222</div>
+        <div id="right" class="column">333</div>
+    </div>
+</body>
+</html>

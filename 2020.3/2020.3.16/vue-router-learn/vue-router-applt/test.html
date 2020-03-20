@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <a onclick="go('/home')">首页</a>
+  <a onclick="go('/about')">关于</a>
+  <div id="aaa"></div>
+<!-- <a href="#/home">首页</a>
+<a href="#/about">关于</a>
+<div id="html"></div> -->
+<script>
+  // window.addEventListener('load',()=>{
+  //   html.innerHTML = location.hash.slice(1)
+  // })
+  // window.addEventListener('hashchange',()=>{
+  //   html.innerHTML = location.hash.slice(1)
+  // })
+  // history Api 404的发生
+  function go(pathname) {
+    history.pushState({}, null, pathname);
+    aaa.innerHTML = pathname;
+  }
+  window.addEventListener('popstate',()=>{
+    go(location.pathname)
+  })
+
+</script>
+</body>
+</html>

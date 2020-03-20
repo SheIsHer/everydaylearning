@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      padding-left: 100px;
+      padding-top: 100px;
+    }
+    article{
+      border: solid 5px silver;
+      width: 550px;
+      height: 550px;
+      display: flex;
+      flex-direction: column;
+    }
+    article div:nth-child(1){
+      flex-grow: 0;
+    }
+    article div:nth-child(2){
+      flex-grow: 2;
+    }
+    article div:nth-child(3){
+      flex-grow: 3;
+    }
+    article *{
+      flex-grow: 1;
+      width: 100px;
+      height: 100px;
+      background: red;
+      font-size: 25px;
+      padding: 10px;
+      background-clip: content-box;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <div>111</div>
+    <div>222</div>
+    <div>333</div>
+  </article>
+</body>
+</html>

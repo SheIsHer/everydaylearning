@@ -1,0 +1,1 @@
+handleCallback({"status": true, "user": "admin"})

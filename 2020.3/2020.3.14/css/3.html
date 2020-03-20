@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    main{
+      height: 100vh;
+      background: purple;
+    }
+    footer{
+      position: fixed;
+      height: 50px;
+      bottom: 0;
+      width: 100vw;
+      background: linear-gradient(to bottom, #f3f3f3, #ddd);
+      border-top: solid 1px #ddd;
+    }
+    footer div{
+      float: left;
+      width: 33%;
+      height: 100%;
+      line-height: 3em;
+      text-align: center;
+      color: #555;
+    }
+    footer div:nth-child(n+2){
+      border-left: solid 1px #ccc;
+    }
+  </style>
+</head>
+<body>
+  <main></main>
+  <footer>
+    <div>后盾人</div>
+    <div>直播</div>
+    <div>333</div>
+  </footer>
+</body>
+</html>

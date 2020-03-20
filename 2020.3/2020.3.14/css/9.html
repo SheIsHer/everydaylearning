@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      padding-left: 100px;
+      padding-top: 100px;
+    }
+    article{
+      border: solid 5px silver;
+      width: 400px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    article section{
+      flex:1 0 100px;
+      background-color: blueviolet;
+      background-clip: content-box;
+      padding: 10px;
+      text-align: center;
+      display: flex;   
+      flex-direction: column;
+    }
+
+    article section span{
+      padding: 10px;
+      background: #ddd;
+    }
+
+    article section div {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+  </style>
+</head>
+<body>
+  <article>
+    <section>
+      <div>houdunren.com</div>
+      <span>up</span>
+    </section>
+    <section>
+      <div>后盾人</div>
+      <span>up</span>
+    </section>
+    <section>
+      <div>hdcms.com</div>
+      <span>up</span>
+    </section>
+  </article>
+</body>
+</html>

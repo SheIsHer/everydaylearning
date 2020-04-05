@@ -5,9 +5,6 @@ Function.prototype.myBind = function(context) {
   var _this = this
   var args = [...arguments.slice(1)]
   return function F(){
-    if(this instanceof F) {
-      return new _this(...args, ...arguments)
-    }
     return _this.apply(context, args.concat(...arguments))
   }
 }
@@ -30,4 +27,5 @@ Function.prototype.myApply = function(context) {
   }else{
     result = context.fn
   }
+  return result
 }

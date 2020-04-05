@@ -23,3 +23,4 @@ con.constructor = Student;
 
 let stu6 = new Student('abc');
 console.log(stu6)
+
